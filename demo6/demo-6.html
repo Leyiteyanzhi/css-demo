@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 1600px;
+            height:720px;
+            background: url("img/bg.gif");
+        }
+        .box1{
+            width: 410px;
+            height: 500px;
+            position: absolute;
+            top: 103px;
+            left: 121px;
+            background: #ffffff;
+        }
+        .box2{
+            width: 410px;
+            height: 500px;
+            position: absolute;
+            top: 103px;
+            left: 631px;
+            background: #000000;
+        }
+        .box3{
+            width: 410px;
+            height: 500px;
+            position: absolute;
+            top: 103px;
+            left: 1118px;
+            background: #e7788d;
+        }
+        div{
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            top: 43px;
+            left: 49px;
+            margin-right: 63px;
+            display: inline-block;
+        }
+        .item{
+            margin-left: 14px;
+        }
+        .label{
+            text-align: right;
+            font-size: 13px;
+            color: #c9c9c9;
+            letter-spacing: 1px;
+            margin-right: 9px;
+            float: left;
+            position: relative;
+            top: 10px;
+        }
+        .sex,.hint,#username1,#username2,#username3,#password1,#password2,#password3{
+            padding:0px;
+            width: 228px;
+            height: 38px;
+            border: 1px solid #c9c9c9;
+            text-indent: 13px;
+        }
+        #password1,#password2,#password3{
+            border: 1px solid #e7788d;
+        }
+        .hint{
+            width: 230px;
+            height: 40px;
+            margin-left: 51px;
+            border: none;
+            color: #e7788d;
+            background: #fdf1f4;
+            font-size: 11px;
+            font-family: "微软雅黑";
+            float: left;
+        }
+        textarea{
+            width: 202px;
+            height: 52px;
+            border: 1px solid #c9c9c9;
+            font-size: 13px;
+            font-family: "微软雅黑";
+            letter-spacing: 1px;
+            padding: 13px;
+        }
+        .label-msg{
+            position: relative;
+            top: 7px;
+            float: left;
+        }
+        .sex{
+            width: 20px;
+            height: 20px;
+            margin: 10px 12px 10px -1px;
+            float: left;
+            border: 1px solid #c9c9c9;
+        }
+        p{
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 10px 30px 0px 0px ;
+            display: inline-block;
+            font-size: 13px;
+            color: #c9c9c9;
+        }
+        .sex:hover{
+            border: 1px solid #e7788d;
+            background: #e7788d;
+        }
+        label{
+            font-size: 13px;
+            margin-right: 9px;
+        }
+        .submit{
+            width: 174px;
+            height: 38px;
+            background: #e7788d;
+            color: #ffffff;
+            size: 13px;
+            position: absolute;
+            left: 117px;
+            top: 411px;
+            border: 3px solid #e7788d;
+        }
+        .hobby input{
+            display: none;
+        }
+        .hobby span{
+            display: inline-block;
+            width: 65px;
+            height: 32px;
+            background: #f9f9f9;
+            font-size: 13px;
+            color: #c9c9c9;
+            line-height: 32px;
+            text-align: center;
+        }
+        .hobby span:hover{
+            background: #c9c9c9;
+            color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <form class="box1">
+        <div >
+            <label for="username1" class="label">用户名：</label>
+            <input type="text" name="username" value="" id="username1">
+        </div>
+        <div class="item" style="top: 103px;">
+            <label for="password1"class="label">密码：</label>
+            <input type="password" name="password" value="" id="password1">
+            <input type="text" name="hint" value="密码要8-12位数字或字母组合" class="hint" disabled>
+        </div>
+        <div class="item" style="top: 199px">
+            <label for="msg1" class="label-msg label">留言：</label>
+            <textarea type="text" name="msg" value="" id="msg1">人生在于折腾</textarea>
+        </div>
+        <div class="item" style="top: 299px;">
+            <label class="label">性别：</label>
+                <input type="radio" name="sex" value="men" class="sex">
+                <p>男</p>
+                <input type="radio" name="sex" value="women" class="sex">
+                <p>女</p>
+        </div>
+        <div class="item" style="top: 339px;">
+            <label  class="label">爱好：</label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="打球" >
+                <span>打球</span>
+            </label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="唱歌" >
+                <span>唱歌</span>
+            </label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="睡觉" >
+                <span>睡觉</span>
+            </label>
+        </div>
+        <span >
+            <input type="submit" value="提交" class="submit">
+        </span>
+
+    </form>
+    <form class="box2">
+        <div >
+            <label for="username2" class="label">用户名：</label>
+            <input type="text" name="username" value="" id="username2" style="background: #4d4d4d;border: #4d4d4d;">
+        </div>
+        <div class="item" style="top: 103px;">
+            <label for="password2"class="label">密码：</label>
+            <input type="password" name="password" value="" id="password2" style="background: #4d4d4d;">
+            <input type="text" name="hint" value="密码要8-12位数字或字母组合" class="hint" disabled style="background: #3a1e24">
+        </div>
+        <div class="item" style="top: 199px">
+            <label for="msg2" class="label-msg label">留言：</label>
+            <textarea type="text" name="msg" value="" id="msg2"  style="background: #4d4d4d;border: #4d4d4d;">人生在于折腾</textarea>
+        </div>
+        <div class="item" style="top: 299px;">
+            <label class="label">性别：</label>
+            <input type="radio" name="sex" value="men" class="sex">
+            <p>男</p>
+            <input type="radio" name="sex" value="women" class="sex">
+            <p>女</p>
+        </div>
+        <div class="item" style="top: 339px;">
+            <label  class="label">爱好：</label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="打球" >
+                <span  style="background: #4d4d4d;">打球</span>
+            </label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="唱歌" >
+                <span  style="background: #4d4d4d;">唱歌</span>
+            </label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="睡觉" >
+                <span  style="background: #4d4d4d;">睡觉</span>
+            </label>
+        </div>
+        <span >
+            <input type="submit" value="提交" class="submit">
+        </span>
+    </form>
+    <form class="box3">
+        <div >
+            <label for="username3" class="label">用户名：</label>
+            <input type="text" name="username" value="" id="username3" style="background: #4d4d4d;border: #4d4d4d;">
+        </div>
+        <div class="item" style="top: 103px;">
+            <label for="password3"class="label">密码：</label>
+            <input type="password" name="password" value="" id="password3" style="background: #4d4d4d;border: #4d4d4d;">
+            <input type="text" name="hint" value="密码要8-12位数字或字母组合" class="hint" disabled style="background: #3a1e24">
+        </div>
+        <div class="item" style="top: 199px">
+            <label for="msg3" class="label-msg label" >留言：</label>
+            <textarea type="text" name="msg" value="" id="msg3" style="background: #4d4d4d;border: #4d4d4d;">人生在于折腾</textarea>
+        </div>
+        <div class="item" style="top: 299px;">
+            <label class="label">性别：</label>
+            <input type="radio" name="sex" value="men" class="sex">
+            <p>男</p>
+            <input type="radio" name="sex" value="women" class="sex">
+            <p>女</p>
+        </div>
+        <div class="item" style="top: 339px;">
+            <label  class="label">爱好：</label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="打球" >
+                <span style="background: #4d4d4d;">打球</span>
+            </label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="唱歌" >
+                <span style="background: #4d4d4d;">唱歌</span>
+            </label>
+            <label class="hobby">
+                <input type="checkbox" name="bobby" value="睡觉" >
+                <span style="background: #4d4d4d;">睡觉</span>
+            </label>
+        </div>
+        <span >
+            <input type="submit" value="提交" class="submit" style="border: 2px solid #ffffff">
+        </span>
+    </form>
+
+</body>
+</html>
