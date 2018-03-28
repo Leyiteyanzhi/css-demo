@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        var pixRatio = 1 / window.devicePixelRatio;
+        var html = document.documentElement;
+        document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=' + pixRatio +
+            ',minimum-scale=' + pixRatio + ',maximum-scale=' + pixRatio + '">');
+        html.style.fontSize = html.clientWidth / 25 + "px";
+    </script>
+    <title>个人中心</title>
+    <link href="css/case.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="backBtn">
+            <i>&nbsp;</i>
+        </div>
+        <div class="signOut">
+            <span>退出</span>
+            <i>&nbsp;</i>
+        </div>
+    </header>
+    <section class="info">
+        <div class="headerImg">
+            <img src="img/16.jpg">
+        </div>
+        <p class="userName">
+            <span>程序员</span>
+            <img src="img/member.png">
+        </p>
+        <p class="regTime">注册时间：2018年3月3日</p>
+    </section>
+    <h3 class="title">个人资料</h3>
+    <section class="menu">
+        <a href="#" class="item">
+            <i class="baseInfo"></i>
+            <span>基本信息</span>
+        </a>
+        <a href="#" class="item">
+            <i class="userInfo"></i>
+            <span>个人信息</span>
+        </a>
+        <a href="#" class="item">
+            <i class="vipInfo"></i>
+            <span>VIP信息</span>
+        </a>
+        <a href="#" class="item">
+            <i class="order"></i>
+            <span>我的订单</span>
+        </a>
+        <a href="#" class="item">
+            <i class="record"></i>
+            <span>视频激活记录</span>
+        </a>
+        <a href="#" class="item">
+            <i class="device"></i>
+            <span>我的设备</span>
+        </a>
+        <a href="#" class="item">
+            <i class="account"></i>
+            <span>绑定账号</span>
+        </a>
+        <a href="#" class="item">
+            <i class="more"></i>
+            <span>...</span>
+        </a>
+    </section>
+    <h3 class="title">安全设置</h3>
+    <section class="saft">
+        <a href="" class="item">
+                <i class="password"></i>
+                <span>修改密码</span>
+        </a>
+        <a href="" class="item">
+                <i class="email"></i>
+                <span>修改邮箱</span>
+        </a>
+    </section>
+</body>
+
+</html>
